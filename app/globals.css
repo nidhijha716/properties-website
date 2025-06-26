@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 82%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 82%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 82%;
+    --primary: 0 0% 82%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 36%;
+    --secondary-foreground: 0 0% 82%;
+    --muted: 0 0% 36%;
+    --muted-foreground: 0 0% 53%;
+    --accent: 0 0% 36%;
+    --accent-foreground: 0 0% 82%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 36%;
+    --input: 0 0% 36%;
+    --ring: 0 0% 82%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(209, 208, 208, 0.1);
+  }
+
+  .glass-card {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(209, 208, 208, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .gradient-overlay {
+    background: radial-gradient(circle at 20% 50%, rgba(152, 134, 134, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(92, 78, 78, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(209, 208, 208, 0.1) 0%, transparent 50%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #d1d0d0 0%, #988686 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .stagger-animation {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .circular-overlay {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(152, 134, 134, 0.2) 0%, transparent 70%);
+    pointer-events: none;
+  }
+}
+
+/* Disable parallax on mobile for performance */
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c4e4e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #988686;
+}
