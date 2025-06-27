@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Playfair_Display, Montserrat, Inter } from "next/font/google"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 const playfair = Playfair_Display({
@@ -26,7 +27,6 @@ export const metadata: Metadata = {
   description:
     "Discover your dream property with Raj Properties. Premium real estate consultancy in New Ashok Nagar, Eastend apts, Vasundhara Enclave, Mayur Vihar, Noida and Greater Noida",
   keywords: "New Ashok Nagar, Eastend apts, Vasundhara Enclave, Mayur Vihar, Noida, Greater Noida",
-    
 }
 
 export default function RootLayout({
@@ -35,18 +35,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    
-
-
     <html lang="en" className="dark">
-  <head>
-    <link rel="icon" href="/image/logo.png" type="image/png" />
-  </head>
-  <body
-    className={`${playfair.variable} ${montserrat.variable} ${inter.variable} font-inter bg-black text-light-gray antialiased`}
-  >
-    {children}
-  </body>
-</html>
+      <head>
+        <link rel="icon" href="/image/logo.png" type="image/png" />
+      </head>
+      <body
+        className={`${playfair.variable} ${montserrat.variable} ${inter.variable} font-inter bg-black text-light-gray antialiased`}
+      >
+        {children}
+        <Analytics /> {/* ✅ Added Vercel Analytics */}
+      </body>
+    </html>
   )
 }
