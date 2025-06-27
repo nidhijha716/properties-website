@@ -42,7 +42,7 @@ export default function FounderProfile() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="font-playfair text-2xl font-bold text-light-gray mb-2">Raj Kumar</h3>
+                <h3 className="font-playfair text-2xl font-bold text-light-gray mb-2">Mr. Sunil Verma</h3>
                 <p className="font-montserrat text-medium-gray mb-4">Founder & CEO</p>
                 <p className="text-medium-gray text-sm">"Building dreams, one property at a time"</p>
               </div>
@@ -52,7 +52,7 @@ export default function FounderProfile() {
               <div>
                 <h3 className="font-montserrat text-2xl font-bold text-light-gray mb-4">A Visionary Leader</h3>
                 <p className="text-medium-gray leading-relaxed mb-4">
-               Mr. Sunil Verma founded Raj Properties in 20__ with a vision to offer a more transparent, personalized, and reliable real estate experience. His expertise spans both residential and commercial properties, with a strong presence in Eastend Apartments, Vasundhara Enclave, New Ashok Nagar, Mayur Vihar, Noida, and Greater Noida. Under his dedicated leadership, Raj Properties has become a trusted name known for its commitment to honesty, client satisfaction, and long-term relationships.
+               Mr. Sunil Verma founded Raj Properties in 2001 with a vision to offer a more transparent, personalized, and reliable real estate experience. His expertise spans both residential and commercial properties, with a strong presence in Eastend Apartments, Vasundhara Enclave, New Ashok Nagar, Mayur Vihar, Noida, and Greater Noida. Under his dedicated leadership, Raj Properties has become a trusted name known for its commitment to honesty, client satisfaction, and long-term relationships.
 
 
                 </p>
