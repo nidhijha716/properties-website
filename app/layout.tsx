@@ -24,9 +24,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Raj Properties - Premium Real Estate Solutions",
   description:
-    "Discover your dream property with Raj Properties. Premium real estate consultancy in Noida, Greater Noida, and Indirapuram.",
-  keywords: "real estate, properties, Noida, Greater Noida, Indirapuram, luxury homes",
-    generator: 'v0.dev'
+    "Discover your dream property with Raj Properties. Premium real estate consultancy in New Ashok Nagar, Eastend apts, Vasundhara Enclave, Mayur Vihar, Noida and Greater Noida",
+  keywords: "New Ashok Nagar, Eastend apts, Vasundhara Enclave, Mayur Vihar, Noida, Greater Noida",
+    
 }
 
 export default function RootLayout({
@@ -35,12 +35,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    
+
+
     <html lang="en" className="dark">
-      <body
-        className={`${playfair.variable} ${montserrat.variable} ${inter.variable} font-inter bg-black text-light-gray antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+  <head>
+    <link rel="icon" href="/image/logo.png" type="image/png" />
+  </head>
+  <body
+    className={`${playfair.variable} ${montserrat.variable} ${inter.variable} font-inter bg-black text-light-gray antialiased`}
+  >
+    {children}
+  </body>
+</html>
   )
 }

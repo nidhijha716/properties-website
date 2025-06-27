@@ -21,18 +21,18 @@ export default function ContactSidebar() {
           </div>
           <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-1">Raj Kumar</h3>
           <p className="text-medium-gray text-sm">Property Consultant</p>
-          <p className="text-medium-gray text-sm">10+ Years Experience</p>
+          <p className="text-medium-gray text-sm">25+ Years Experience</p>
         </div>
 
         <div className="space-y-3 mb-6">
           <Button className="w-full bg-green-600 hover:bg-green-700 text-white" asChild>
-            <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919810233615" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp
             </a>
           </Button>
           <Button className="w-full bg-light-gray text-pure-black hover:bg-medium-gray" asChild>
-            <a href="tel:+911234567890">
+            <a href="tel:+919810233615">
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </a>
@@ -42,11 +42,11 @@ export default function ContactSidebar() {
         <div className="space-y-3 text-sm">
           <div className="flex items-center text-medium-gray">
             <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-            <span>+91 123 456 7890</span>
+            <span>+91 9810233615</span>
           </div>
           <div className="flex items-center text-medium-gray">
             <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-            <span>raj@rajproperties.com</span>
+            <span>sunilverma3625@gmail.com</span>
           </div>
         </div>
       </div>

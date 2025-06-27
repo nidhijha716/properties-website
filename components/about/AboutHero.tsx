@@ -21,7 +21,7 @@ export default function AboutHero() {
             className="text-medium-gray text-lg leading-relaxed max-w-3xl mx-auto stagger-animation"
             style={{ animationDelay: "0.4s" }}
           >
-            Established in 2007, Raj Properties has built a reputation for guiding families and investors to the right properties across New Ashok Nagar, Mayur Vihar, and nearby areas in Noida and Delhi NCR. Our dedication to transparency, client satisfaction, and local expertise makes us a trusted name in real estate.
+            Established in 2001, Raj Properties has built a reputation for guiding families and investors to the right properties across New Ashok Nagar, Mayur Vihar, and nearby areas in Noida and Delhi NCR. Our dedication to transparency, client satisfaction, and local expertise makes us a trusted name in real estate.
 
           </p>
         </div>

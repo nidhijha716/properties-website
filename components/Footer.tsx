@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, MessageCircle} from "lucide-react"
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -69,13 +69,13 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-medium-gray mt-1 flex-shrink-0" />
                 <p className="text-medium-gray text-sm">
-                 B-294, Shop No. 4 
-                 <br />
-                 New Ashok Nagar,Opp. East End Apts.
-                  <br />
+                  B-294, Shop No. 4 <br />
+                  New Ashok Nagar, Opp. East End Apts.<br />
                   New Delhi - 110096
                 </p>
               </div>
+
+              {/* Phone 1 */}
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-medium-gray flex-shrink-0" />
                 <a
@@ -85,15 +85,30 @@ export default function Footer() {
                   +91 9810233615
                 </a>
               </div>
+
+              {/* Phone 2 */}
+              <div className="flex items-center space-x-3">
+                <Phone className="w-4 h-4 text-medium-gray flex-shrink-0" />
+                <a
+                  href="tel:+919810233625"
+                  className="text-medium-gray hover:text-light-gray transition-colors text-sm"
+                >
+                  +91 9810233625
+                </a>
+              </div>
+
+              {/* Email */}
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-medium-gray flex-shrink-0" />
                 <a
-                  href="mailto:info@rajproperties.com"
+                  href="mailto:sunilverma3625@gmail.com"
                   className="text-medium-gray hover:text-light-gray transition-colors text-sm"
                 >
                   sunilverma3625@gmail.com
                 </a>
               </div>
+
+              {/* WhatsApp */}
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                 <a
@@ -108,11 +123,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-      
-          </div>
-     
-     
+      </div>
     </footer>
   )
 }
+
+
+
+
+
+
+
+
+

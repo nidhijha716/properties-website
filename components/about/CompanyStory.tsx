@@ -32,11 +32,11 @@ export default function CompanyStory() {
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-light-gray mb-8 text-center">Our Story</h2>
           <div className="glass-card rounded-2xl p-8 md:p-12">
             <p className="text-medium-gray text-lg leading-relaxed mb-6">
-              Raj Properties was established in 20__ with a clear mission—to simplify property buying, selling, and renting across East Delhi and Noida. Starting as a local consultancy in New Ashok Nagar, we’ve grown into a trusted name with over 1000 happy clients across New Ashok Nagar, Mayur Vihar, Vasundhara Enclave, Noida and Greater Noida. Our commitment to personalized service and transparency sets us apart in the local real estate market.
+              Raj Properties was established in 2001 with a clear mission—to simplify property buying, selling, and renting across East Delhi and Noida. Starting as a local consultancy in New Ashok Nagar, we’ve grown into a trusted name with over 1000 happy clients across New Ashok Nagar, Mayur Vihar, Vasundhara Enclave, Noida and Greater Noida. Our commitment to personalized service and transparency sets us apart in the local real estate market.
 
             </p>
             <p className="text-medium-gray text-lg leading-relaxed mb-6">
-              Our journey began when our founder, Sunil Verma, recognized the need for a more personalized and transparent approach to real estate. With a clear vision and deep commitment to client satisfaction, he established Raj Properties to offer exceptional service that goes beyond just buying and selling. Even today, he continues to own and run the business almost single-handedly, ensuring every client receives the same level of dedication and trust that defined our beginnings.
+              Our journey began when our founder, Mr. Sunil Verma, recognized the need for a more personalized and transparent approach to real estate. With a clear vision and deep commitment to client satisfaction, he established Raj Properties to offer exceptional service that goes beyond just buying and selling. Even today, he continues to own and run the business almost single-handedly, ensuring every client receives the same level of dedication and trust that defined our beginnings.
 
             </p>
             <p className="text-medium-gray text-lg leading-relaxed">
