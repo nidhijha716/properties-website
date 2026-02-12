@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
+// ✅ Demo constants (single source of truth)
+const DEMO_PHONE = "+91 90000 00001"
+const DEMO_TEL = "+919000000001"
+const DEMO_EMAIL = "contact@rajproperties-demo.com"
+const DEMO_WHATSAPP = "919000000002"
+
 export default function ContactSidebar() {
   return (
     <div className="space-y-6 sticky top-24">
@@ -19,20 +25,23 @@ export default function ContactSidebar() {
               className="w-full h-full object-cover"
             />
           </div>
-          <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-1">Raj Kumar</h3>
+          <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-1">
+            Raj Kumar
+          </h3>
           <p className="text-medium-gray text-sm">Property Consultant</p>
           <p className="text-medium-gray text-sm">25+ Years Experience</p>
         </div>
 
         <div className="space-y-3 mb-6">
           <Button className="w-full bg-green-600 hover:bg-green-700 text-white" asChild>
-            <a href="https://wa.me/919810233615" target="_blank" rel="noopener noreferrer">
+            <a href={`https://wa.me/${DEMO_WHATSAPP}`} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-4 h-4 mr-2" />
               WhatsApp
             </a>
           </Button>
+
           <Button className="w-full bg-light-gray text-pure-black hover:bg-medium-gray" asChild>
-            <a href="tel:+919810233615">
+            <a href={`tel:${DEMO_TEL}`}>
               <Phone className="w-4 h-4 mr-2" />
               Call Now
             </a>
@@ -42,18 +51,20 @@ export default function ContactSidebar() {
         <div className="space-y-3 text-sm">
           <div className="flex items-center text-medium-gray">
             <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-            <span>+91 9810233615</span>
+            <span>{DEMO_PHONE}</span>
           </div>
           <div className="flex items-center text-medium-gray">
             <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-            <span>sunilverma3625@gmail.com</span>
+            <span>{DEMO_EMAIL}</span>
           </div>
         </div>
       </div>
 
       {/* Quick Actions */}
       <div className="glass-card rounded-2xl p-6">
-        <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-4">Quick Actions</h3>
+        <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-4">
+          Quick Actions
+        </h3>
         <div className="grid grid-cols-2 gap-3">
           <Button
             variant="outline"
@@ -84,7 +95,9 @@ export default function ContactSidebar() {
 
       {/* Contact Form */}
       <div className="glass-card rounded-2xl p-6">
-        <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-4">Get More Information</h3>
+        <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-4">
+          Get More Information
+        </h3>
         <form className="space-y-4">
           <Input
             placeholder="Your Name"
@@ -105,13 +118,17 @@ export default function ContactSidebar() {
             rows={4}
             className="bg-black/50 border-dark-gray text-light-gray placeholder:text-medium-gray resize-none"
           />
-          <Button className="w-full bg-light-gray text-pure-black hover:bg-medium-gray">Send Message</Button>
+          <Button className="w-full bg-light-gray text-pure-black hover:bg-medium-gray">
+            Send Message
+          </Button>
         </form>
       </div>
 
       {/* Property Stats */}
       <div className="glass-card rounded-2xl p-6">
-        <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-4">Property Stats</h3>
+        <h3 className="font-montserrat text-lg font-semibold text-light-gray mb-4">
+          Property Stats
+        </h3>
         <div className="space-y-3 text-sm">
           <div className="flex justify-between">
             <span className="text-medium-gray">Listed</span>

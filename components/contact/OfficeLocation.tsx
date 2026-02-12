@@ -1,5 +1,15 @@
-import { MapPin, Navigation, Train } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MapPin, Navigation, Train } from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+// ✅ Demo location constants
+const DEMO_ADDRESS_LINES = [
+  "221 Business Avenue, Suite 12",
+  "Sector 99, Metro City",
+  "India - 999999",
+  "India",
+]
+
+const DEMO_MAP_QUERY = "Sector 99, Metro City, India"
 
 export default function OfficeLocation() {
   return (
@@ -12,43 +22,44 @@ export default function OfficeLocation() {
         <h3 className="font-montserrat text-2xl font-bold text-light-gray">Office Location</h3>
       </div>
 
-      {/* Office Address */}
       <div className="space-y-6">
+        {/* Office Address */}
         <div>
-          <h4 className="font-montserrat font-semibold text-light-gray mb-2">Raj Properties Head Office</h4>
+          <h4 className="font-montserrat font-semibold text-light-gray mb-2">
+            Raj Properties Head Office
+          </h4>
+
           <p className="text-medium-gray leading-relaxed">
-            B-294, Shop No. 4
-            <br />
-            New Ashok Nagar, Opp. East End Apts.
-            <br />
-            Delhi-110096
-            <br />
-            India
+            {DEMO_ADDRESS_LINES.map((line) => (
+              <span key={line}>
+                {line}
+                <br />
+              </span>
+            ))}
           </p>
         </div>
 
-        {/* Embedded Google Map */}
+        {/* Embedded Google Map (Demo Location) */}
         <div className="relative h-48 rounded-xl overflow-hidden">
-  <iframe
-    title="Raj Properties Location"
-    src="https://www.google.com/maps?q=B-294,+Shop+No.+4,+New+Ashok+Nagar,+Opp.+East+End+Apts,+Delhi+110096&output=embed"
-    width="100%"
-    height="100%"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
-</div>
+          <iframe
+            title="Raj Properties Location (Demo)"
+            src={`https://www.google.com/maps?q=${encodeURIComponent(DEMO_MAP_QUERY)}&output=embed`}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
 
-
-        {/* Directions Button */}
+        {/* Directions Button (Demo Location) */}
         <Button
           className="w-full bg-light-gray text-pure-black hover:bg-medium-gray font-montserrat font-semibold"
           asChild
         >
           <a
-            href="https://www.google.com/maps/search/?api=1&query=B-294,+Shop+No.+4,+New+Ashok+Nagar,+Opp.+East+End+Apts,+Delhi+110096"
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(DEMO_MAP_QUERY)}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -66,13 +77,14 @@ export default function OfficeLocation() {
               <div>
                 <p className="font-montserrat font-medium text-light-gray">By Metro</p>
                 <p className="text-medium-gray text-sm">
-                  Nearest metro station: New Ashok Nagar (Blue Line) – 5 minutes walk from Gate No.2.
+                  Nearest metro station: Central Metro Station (Demo Line) – approx. 5–10 minutes walk.
                 </p>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
-  );
+  )
 }

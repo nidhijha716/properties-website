@@ -1,6 +1,11 @@
 import Link from "next/link"
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 
+const DEMO_PHONE_1 = "+91 90000 00001"
+const DEMO_PHONE_2 = "+91 90000 00002"
+const DEMO_EMAIL = "info@rajproperties-demo.com"
+const DEMO_WHATSAPP = "919000000002"
+
 export default function Footer() {
   return (
     <footer className="bg-pure-black border-t border-dark-gray">
@@ -18,8 +23,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-medium-gray text-sm leading-relaxed">
-              Your trusted partner in finding the perfect property. We specialize in premium real estate solutions
-              across Eastend apts, Vasundhra Enclave, New Ashok Nagar, Noida and Greater Noida.
+              Your trusted partner in premium real estate solutions across top residential and commercial locations.
             </p>
           </div>
 
@@ -69,55 +73,42 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-medium-gray mt-1 flex-shrink-0" />
                 <p className="text-medium-gray text-sm">
-                  B-294, Shop No. 4 <br />
-                  New Ashok Nagar, Opp. East End Apts.<br />
-                  New Delhi - 110096
+                  221 Business Avenue <br />
+                  Sector 99, Metro City <br />
+                  India - 999999
                 </p>
               </div>
 
-              {/* Phone 1 */}
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-medium-gray flex-shrink-0" />
-                <a
-                  href="tel:+919810233615"
-                  className="text-medium-gray hover:text-light-gray transition-colors text-sm"
-                >
-                  +91 9810233615
+                <a href="tel:+919000000001" className="text-medium-gray hover:text-light-gray transition-colors text-sm">
+                  {DEMO_PHONE_1}
                 </a>
               </div>
 
-              {/* Phone 2 */}
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-medium-gray flex-shrink-0" />
-                <a
-                  href="tel:+919810233625"
-                  className="text-medium-gray hover:text-light-gray transition-colors text-sm"
-                >
-                  +91 9810233625
+                <a href="tel:+919000000002" className="text-medium-gray hover:text-light-gray transition-colors text-sm">
+                  {DEMO_PHONE_2}
                 </a>
               </div>
 
-              {/* Email */}
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-medium-gray flex-shrink-0" />
-                <a
-                  href="mailto:sunilverma3625@gmail.com"
-                  className="text-medium-gray hover:text-light-gray transition-colors text-sm"
-                >
-                  sunilverma3625@gmail.com
+                <a href={`mailto:${DEMO_EMAIL}`} className="text-medium-gray hover:text-light-gray transition-colors text-sm">
+                  {DEMO_EMAIL}
                 </a>
               </div>
 
-              {/* WhatsApp */}
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                 <a
-                  href="https://wa.me/919810233615"
+                  href={`https://wa.me/${DEMO_WHATSAPP}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-500 hover:text-green-400 transition-colors text-sm"
                 >
-                  WhatsApp Us
+                  WhatsApp (Demo)
                 </a>
               </div>
             </div>
@@ -127,12 +118,3 @@ export default function Footer() {
     </footer>
   )
 }
-
-
-
-
-// Trigger redeploy
-
-
-
-

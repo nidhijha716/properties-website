@@ -1,26 +1,31 @@
 import { Phone, Mail, MessageCircle, Clock } from "lucide-react"
 
+// ✅ Demo constants
+const DEMO_PHONE = "+91 90000 00001"
+const DEMO_WHATSAPP_NUMBER = "919000000002"
+const DEMO_EMAIL = "info@rajproperties-demo.com"
+
 const contactMethods = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+91 9810233615",
-    description: "Call us for immediate assistance",
-    action: "tel:9810233625",
+    value: DEMO_PHONE,
+    description: "Call us for immediate assistance (Demo)",
+    action: "tel:+919000000001",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    value: "+91 9810233625",
-    description: "Quick response via WhatsApp",
-    action: "https://wa.me/919810233625",
+    value: "+91 90000 00002",
+    description: "Quick response via WhatsApp (Demo)",
+    action: `https://wa.me/${DEMO_WHATSAPP_NUMBER}`,
   },
   {
     icon: Mail,
     title: "Email",
-    value: "sunilverma3625@gmail.com",
-    description: "Send us your detailed requirements",
-    action: "mailto:sunilverma3625@gmail.com",
+    value: DEMO_EMAIL,
+    description: "Send us your detailed requirements (Demo)",
+    action: `mailto:${DEMO_EMAIL}`,
   },
 ]
 
@@ -35,7 +40,10 @@ export default function ContactInfo() {
     <div className="space-y-8">
       {/* Contact Methods */}
       <div className="glass-card rounded-2xl p-8">
-        <h3 className="font-montserrat text-2xl font-bold text-light-gray mb-6">Contact Information</h3>
+        <h3 className="font-montserrat text-2xl font-bold text-light-gray mb-6">
+          Contact Information
+        </h3>
+
         <div className="space-y-6">
           {contactMethods.map((method, index) => (
             <a
@@ -48,6 +56,7 @@ export default function ContactInfo() {
               <div className="w-12 h-12 bg-gradient-to-br from-light-gray to-medium-gray rounded-xl flex items-center justify-center flex-shrink-0">
                 <method.icon className="w-6 h-6 text-pure-black" />
               </div>
+
               <div>
                 <h4 className="font-montserrat font-semibold text-light-gray mb-1">{method.title}</h4>
                 <p className="font-montserrat text-light-gray mb-1">{method.value}</p>
@@ -66,6 +75,7 @@ export default function ContactInfo() {
           </div>
           <h3 className="font-montserrat text-2xl font-bold text-light-gray">Business Hours</h3>
         </div>
+
         <div className="space-y-3">
           {businessHours.map((schedule, index) => (
             <div
@@ -77,10 +87,10 @@ export default function ContactInfo() {
             </div>
           ))}
         </div>
+
         <div className="mt-6 p-4 glass-effect rounded-xl">
           <p className="text-medium-gray text-sm">
-            <strong className="text-light-gray">Emergency Contact:</strong> Available 24/7 for urgent property matters
-            via WhatsApp
+            <strong className="text-light-gray">Emergency Contact:</strong> Demo support available 24/7 via WhatsApp
           </p>
         </div>
       </div>
